@@ -16,6 +16,7 @@ help:
 	@echo "  make deps     - Installe les dépendances nécessaires au développement"
 	@echo "  make enter    - Entre dans l'environnement virtuel"
 	@echo "  make test     - Exécute les tests avec pytest"
+	@echo "  make server   - Démarre le serveur (mode développement)"
 	@echo "  make venv     - Crée l'environnement virtuel Python"
 
 # Crée l'environnement virtuel
