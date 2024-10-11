@@ -1,0 +1,12 @@
+services:
+  api:
+    build: .
+    restart: always
+    ports:
+      - 8000
+    volumes:
+      - ./data:/code/data
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.${SERVICE}.rule=Host(`${DOMAIN_URL}`)"
+      - "traefik.http.routers.${SERVICE}.entrypoints=websecure"
